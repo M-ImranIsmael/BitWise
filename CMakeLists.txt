@@ -26,8 +26,5 @@ target_link_libraries(bitwise
 
 # Set output directories based on build type
 set_target_properties(bitwise PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/Debug
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}
 )
-
-# Specify where to place the compile_commands.json
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/Debug")
